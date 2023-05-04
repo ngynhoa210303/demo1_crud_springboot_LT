@@ -53,6 +53,7 @@ Các phương thức khác nhau sẽ được sử dụng tùy thuộc vào ki�
 
 
 + `@PatchMapping`: được sử dụng để ánh xạ các request HTTP PATCH và thường được sử dụng để cập nhật một phần của một resource.
+
 **3. Sử dụng @Autowired @Service @Controller**
    https://www.tutorialspoint.com/spring_boot/spring_boot_service_components.htm
    - @Autowired được sử dụng trong Spring Framework để tự động liên kết các phụ thuộc (dependencies) của một bean với các bean khác. Khi một bean được khởi tạo, Spring sẽ tự động tìm kiếm các phụ thuộc của nó và cung cấp chúng cho bean.
@@ -83,7 +84,7 @@ Trong đoạn code trên, @Autowired được sử dụng để tự động li�
   - @Configuration:
   @Configuration là một annotation được sử dụng để đánh dấu các class là một Spring Configuration. @Configuration thường được sử dụng để cấu hình các Bean và các thành phần khác của ứng dụng. Các class được đánh dấu bằng @Configuration thường chứa các phương thức được đánh dấu bằng @Bean để tạo ra các Bean trong ứng dụng.
 
-**4. Model**
+**4. Model/ Page**
 - Model là một interface và được implement bởi class ExtendedModelMap. Nó cung cấp các phương thức để thêm, xóa và truy xuất các thuộc tính của một đối tượng. Khi một đối tượng Model được truyền vào phương thức của một Controller, nó sẽ được Spring tự động tạo ra và cung cấp cho Controller đó.
 ```java
  @GetMapping("/detail/{ma}")
@@ -96,6 +97,8 @@ Trong đoạn code trên, @Autowired được sử dụng để tự động li�
         return "index";
     }
 ```
+Trong Spring Boot, đối tượng Page được sử dụng để lưu trữ một trang (page) dữ liệu, thường được sử dụng để phân trang (pagination) dữ liệu trong các ứng dụng web.
+
 **5. @PathVariable @ModelAttribute @RequestParam....1 số loại khác**
 - @RequestParam, @PathVariable và @ModelAttribute là những annotation trong Spring Framework được sử dụng để trích xuất giá trị từ request và truyền vào cho các phương thức xử lý yêu cầu (request) HTTP.
 
