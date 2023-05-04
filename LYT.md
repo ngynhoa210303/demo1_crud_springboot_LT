@@ -56,11 +56,6 @@ Các phương thức khác nhau sẽ được sử dụng tùy thuộc vào ki�
 **3. Sử dụng @Autowired @Service @Controller**
    https://www.tutorialspoint.com/spring_boot/spring_boot_service_components.htm
    - @Autowired được sử dụng trong Spring Framework để tự động liên kết các phụ thuộc (dependencies) của một bean với các bean khác. Khi một bean được khởi tạo, Spring sẽ tự động tìm kiếm các phụ thuộc của nó và cung cấp chúng cho bean.
-   - ```java
-   @Autowired
-    private MayTinhService mayTinhService;
-   ```
-
 Trong đoạn code trên, @Autowired được sử dụng để tự động liên kết MayTinhService với MayTinhController. Điều này cho phép MayTinhController sử dụng các phương thức của MayTinhService mà không cần phải tạo đối tượng mới của nó.
 
 **3.1 : Cơ Chế Dependency Injection (DI) và Inverse of Control (IoC)**
